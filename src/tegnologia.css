@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #1e1e1e; /* Fondo oscuro similar a VS Code */
+  color: #d4d4d4; /* Texto principal claro */
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #dcdcaa; /* Color de encabezado similar a los comentarios en VS Code */
+}
+
+.date {
+  text-align: center;
+  font-size: 1.2em;
+  color: #808080; /* Color gris claro para fechas */
+  margin-bottom: 20px;
+}
+
+.noticia {
+  display: flex;
+  align-items: center;
+  background-color: #2d2d2d; /* Fondo de las tarjetas */
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombras más oscuras */
+  overflow: hidden;
+}
+
+.noticia img {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.noticia h2 {
+  color: #4ec9b0; /* Color verde azulado para encabezados */
+  margin: 0;
+}
+
+.noticia p {
+  margin: 10px 0;
+  color: #ffff; /* Texto en azul claro */
+}
+
+.comentarios {
+  background-color: #2d2d2d;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+
+.comentarios h2 {
+  color: #dcdcaa;
+  font-size: 1.5em;
+}
+
+.comentario {
+  padding: 10px 0;
+  border-bottom: 1px solid #3c3c3c;
+  display: flex;
+  flex-direction: column;
+}
+
+.comentario:last-child {
+  border-bottom: none;
+}
+
+.nombre-comentario {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 1em;
+  color: #c586c0; /* Color rosa claro para los nombres */
+}
+
+.comentario p {
+  margin: 0;
+  color: #d4d4d4;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: #007acc; /* Botón azul VS Code */
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005a9e; /* Azul más oscuro para hover */
+}
+
+textarea, input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #3c3c3c;
+  background-color: #1e1e1e;
+  color: #d4d4d4;
+  resize: vertical;
+  margin-top: 10px;
+}
+
+.deportes-label {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 55px;
+  font-weight: bold;
+  color: #4ec9b0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  font-family: Consolas, monospace;
+  text-transform: uppercase;
+}
